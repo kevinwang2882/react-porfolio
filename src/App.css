@@ -5,14 +5,14 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #33333383;
   color: white;
   padding: 10px 0;
   text-align: center;
   position: fixed;
   width: 100%;
   top: 100px;
-  left:520px;
+  left:800px;
 }
 .header {
   background-color: #333;
@@ -47,4 +47,18 @@ nav ul li:last-child {
   position: fixed;
   bottom: 0px;
   width: 100%;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Optional: Adds some spacing between items */
+  margin-left: 10px;
+}
+.contact-info img {
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+.title {
+  left:800px;
 }
