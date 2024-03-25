@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-      <div className="contact">
+      <div className="contact-container">
         <h1 className="title">Get in touch</h1>
         <div className="contact-info">
           <img

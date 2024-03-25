@@ -1,0 +1,22 @@
+.social-links {
+    margin-top: 20px; /* Add margin at the top */
+}
+
+/* Individual social media link */
+.social-links a {
+    display: inline-block; /* Display as block to apply margin */
+    margin-right: 10px; /* Add margin between icons */
+}
+
+/* Styling for social media icons */
+.social-links img {
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    border-radius: 50%; /* Make it circular */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+/* Hover effect for social media icons */
+.social-links a:hover img {
+    transform: scale(1.2); /* Scale up on hover */
+}

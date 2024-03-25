@@ -7,6 +7,7 @@ import Project from './components/Project'
 import {Routes, Route} from 'react-router-dom'
 import './App.css'
 import React from 'react';
+import Home from './components/Home'
 
 function App() {
   return (
@@ -14,13 +15,17 @@ function App() {
       <div className="App">
       
         <Header />
-        <Routes>
-          <Route path="/" element={<AboutMe />} />
+       
+        <Routes className="main-container">
+          <Route path="/" element={<Home />} /> 
+          <Route path="/about" element={<AboutMe />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
+       
+       
       </div>
    
   );

@@ -2,52 +2,76 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex; 
+}
+.App {
+  display: grid;
+  grid-template-columns: 300px 1fr; /* Two columns: 200px for the vertical header and 1fr for the content */
+  gap: 20px; /* Gap between columns */
 }
 
-header {
-  background-color: #33333383;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 100px;
-  left:800px;
-}
 .header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
+  width: 265px;
+  height: 100vh; /* Set header height to full viewport height */
+  background-color: #030303; /* Set background color */
+  color: white; /* Set text color */
+  padding: 20px; /* Add padding */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Image box */
+.image-box {
+  width: 100px; /* Set image width */
+  height: 100px; /* Set image height */
+  border-radius: 50%; /* Make image circular */
+  overflow: hidden; /* Hide overflow */
+  margin-bottom: 20px; /* Add margin at bottom */
+}
+
+/* Image inside image box */
+.image-box img {
+  width: 100%; /* Make image fill container */
+  height: 100%; /* Make image fill container */
+  object-fit: cover; /* Cover image without stretching */
+}
+
+/* Name */
+h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 24px; /* Set font size */
+  font-weight: normal; /* Set font weight */
+}
+.title {
+  margin: 0; /* Remove default margin */
+  font-size: 35px; /* Set font size */
+  font-weight: normal; /* Set font weight */
 }
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  list-style-type: none; /* Remove bullet points */
+  margin: 50px,50px,; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-top: 60px;
+  margin-bottom: 10px; /* Add margin between list items */
 }
 
-nav ul li:last-child {
-  margin-right: 0;
+nav ul li a {
+  display: block; /* Display links as block elements */
+  color: white; /* Set link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Set font size */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-}
+
 .contact-info {
   display: flex;
   align-items: center;
@@ -59,6 +83,75 @@ nav ul li:last-child {
   vertical-align: middle;
   
 }
-.title {
-  left:800px;
+.home-container {
+  width: 1280px;
+  height: 100vh;
+  background: url('IMG_4218.jpeg') top center;
+  background-size: cover; /* Adjust the size of the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; /* Center the background image */
+
+}
+.home-container::before{
+  content: "";
+  background: rgba(5, 13, 24, 0.422);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 305px;
+  right: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.project-container,.resume-container{
+  padding: 100px; /* Padding */
+}
+
+.contact-container{
+  flex: 1; /* Fill remaining space */
+  padding: 100px; /* Add padding */
+  
+}
+.project-details-container {
+  flex: 1; /* Fill remaining space */
+  padding: 20px; /* Add padding */
+}
+
+.project-details {
+  background-color:white; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+}
+
+/* Styling for the footer */
+footer {
+  font-family:  Helvetica, sans-serif;
+  background-color: #F1F1F1;
+  color: black;
+  padding: 0px 0;
+  bottom: 0;
+  left: 0;
+  width: 16%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.main-content {
+
+  padding: 100px; /* Padding */
 }
