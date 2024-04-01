@@ -10,9 +10,9 @@
 
 /* Styling for social media icons */
 .social-links img {
-    width: 30px; /* Set width */
-    height: 30px; /* Set height */
-    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+   
     transition: transform 0.3s ease; /* Add transition for hover effect */
 }
 

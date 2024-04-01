@@ -19,7 +19,7 @@ function App() {
         <Routes className="main-container">
           <Route path="/" element={<Home />} /> 
           <Route path="/about" element={<AboutMe />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/experience" element={<Resume />} />
           <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

@@ -40,7 +40,7 @@ body {
 /* Name */
 h1 {
   margin: 0; /* Remove default margin */
-  font-size: 24px; /* Set font size */
+  font-size: 30px; /* Set font size */
   font-weight: normal; /* Set font weight */
 }
 .title {
@@ -117,8 +117,16 @@ nav ul li a:hover {
 }
 .project-container,.resume-container{
   padding: 100px; /* Padding */
+  
+  
 }
-
+.word{
+  padding: 20px
+}
+.image-container{
+  display: flex;
+  align-items: flex-start;
+}
 .contact-container{
   flex: 1; /* Fill remaining space */
   padding: 100px; /* Add padding */

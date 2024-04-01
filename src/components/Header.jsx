@@ -1,5 +1,7 @@
 import NavBar from "./NavBar";
 import '../style/Header.css';
+import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
     return (
@@ -14,16 +16,10 @@ export default function Header() {
                 <div>
                     <div className="social-links">
                         <a href="https://github.com/kevinwang2882" target="_blank" rel="noopener noreferrer">
-                            <img
-                                src="https://www.svgrepo.com/show/360451/github-circle.svg"
-                                alt="GitHub Icon"
-                            />
+                        <FaGithubSquare  style={{ width: '40px', height: '40px', marginRight: '3px' }} />
                         </a>
                         <a href="https://www.linkedin.com/in/kevin-wang-kw1" target="_blank" rel="noopener noreferrer">
-                            <img
-                                src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMS0xMC5wbmc.png"
-                                alt="LinkedIn Icon"
-                            />
+                        <FaLinkedin style={{ width: '40px', height: '40px', marginRight: '3px' }} />
                         </a>
                     </div>
                 </div>

@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { GoProjectRoadmap } from "react-icons/go";
+import { FaTools } from "react-icons/fa";
 
 export default function Nav() {
   return (
@@ -11,7 +13,7 @@ export default function Nav() {
               <img
                 src="https://cdn-icons-png.freepik.com/256/14025/14025381.png"
                 alt="home Icon"
-                style={{ width: '40px', height: '40px', marginRight: '3px' }}
+                style={{ width: '35px', height: '35px', marginRight: '3px' }}
               />
               Home
             </Link>
@@ -27,21 +29,13 @@ export default function Nav() {
               About
             </Link>
           </li>
-          <li><Link to="/resume" style ={{display: 'flex',
+          <li><Link to="/Experience" style ={{display: 'flex',
                 alignItems: 'center'}}>
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/3731/3731553.png"
-                alt="user Icon"
-                style={{ width: '40px', height: '30px',marginRight: '2px',  }}
-              />
-            Resume</Link></li>
+            <FaTools style={{ width: '25px', height: '25px', marginRight: '5px' }}/>
+            Experience</Link></li>
           <li><Link to="/projects" style ={{display: 'flex',
                 alignItems: 'center'}}>
-              <img
-                src="https://png.pngtree.com/png-clipart/20230504/original/pngtree-project-management-line-icon-png-image_9137897.png"
-                alt="user Icon"
-                style={{ width: '40px', height: '30px' ,marginRight: '5px',}}
-              />
+            <GoProjectRoadmap style={{ width: '40px', height: '30px', marginRight: '5px' }}/>
             Projects
             </Link></li>
           <li><Link to="/contact" style ={{display: 'flex',
@@ -49,7 +43,7 @@ export default function Nav() {
               <img
                 src="https://cdn3.iconfinder.com/data/icons/address-book-providers-in-black-white/512/gmail-512.png"
                 alt="user Icon"
-                style={{ width: '40px', height: '30px', marginRight: '5px' }}
+                style={{ width: '40px', height: '40px', marginRight: '0px' }}
               />
             Contact</Link></li>
         </ul>
