@@ -1,7 +1,6 @@
 export default function Project () {
     return (
        
-    
         <div className="project-container"> 
         <h2>Browse My Recent </h2>
         <h1>Project</h1>

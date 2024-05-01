@@ -15,7 +15,7 @@ export default function Resume() {
         </div>
         <div className="backend-box">
           <h1>Backend Development</h1>
-          <h2><LiaCheckCircleSolid /> JSON <LiaCheckCircleSolid /> Express JS <LiaCheckCircleSolid /> Django </h2>
+          <h2><LiaCheckCircleSolid /> Node.js <LiaCheckCircleSolid /> Express JS <LiaCheckCircleSolid /> Django </h2>
           <h2><LiaCheckCircleSolid /> Python <LiaCheckCircleSolid /> Mango DB <LiaCheckCircleSolid /> SQL </h2>
         </div>
       </div>
