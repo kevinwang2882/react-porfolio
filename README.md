@@ -1,3 +1,3 @@
 porfolio using react 
 
-all the 
+all the designed
